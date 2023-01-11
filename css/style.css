@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .footer-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 p {
@@ -23,6 +24,7 @@ p {
   align-items: center;
   margin-right: 80px;
   width: 35px;
+  margin-top: -15px;
 }
 
 .game-board {
@@ -42,10 +44,49 @@ p {
   animation: pipe-animation 2s infinite linear;
 }
 
+.playagain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.playagain img {
+  position: absolute;
+  margin-top: 35px;
+  margin-left: -275px;
+  width: 80px;
+  cursor: pointer;
+  grid-column: 1;
+}
+
+a.pmario {
+  font-size: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+}
+
+#btn1 {
+  background-color: #999;
+  width: 200px;
+  border-radius: 4px;
+  margin-left: 5px;
+  grid-column: 1;
+  padding: 4px;
+  padding-right: 12px;
+}
+
+#btn1:hover {
+  background-color: #000;
+}
+
 .mario {
   width: 150px;
   position: absolute;
   bottom: 0;
+}
+.pmario:hover {
+  color: red;
 }
 
 .jump {
